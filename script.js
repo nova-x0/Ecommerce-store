@@ -61,8 +61,10 @@ window.addEventListener("scroll", function () {
   let navBar = document.querySelector(".navBar");
   if (window.scrollY > 0) {
     navBar.style.padding = "15px 15px";
+    navBar.style.backgroundColor = "#F5F5F5";
   } else {
     navBar.style.padding = "";
+    navBar.style.backgroundColor = "";
   }
 });
 
