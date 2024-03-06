@@ -55,6 +55,9 @@
 ::-webkit-scrollbar {
   width: 0;
 }
+::selection {
+  background-color: #cccccc;
+}
 
 * {
   margin: 0;
@@ -357,17 +360,20 @@ hr {
   transform: scale(1.1);
 }
 
-.section4FlexCon{
+.section4FlexCon {
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 75px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 50px;
 }
 
-.div1, .div2, .div3, .div4{
+.div1,
+.div2,
+.div3,
+.div4 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -375,36 +381,48 @@ hr {
   gap: 20px;
 }
 
-.div1 > i, .div2 > i, .div3 > i, .div4 > i{
+.div1 > i,
+.div2 > i,
+.div3 > i,
+.div4 > i {
   font-size: 36px;
   transition: 0.3s;
 }
 
-.div1:hover >i,.div2:hover >i, .div3:hover >i, .div4:hover >i {
-  transform:rotateY(180deg);
+.div1:hover > i,
+.div2:hover > i,
+.div3:hover > i,
+.div4:hover > i {
+  transform: rotateY(180deg);
 }
 
-.div1 > h1, .div2 > h1, .div3 > h1, .div4 > h1{
-text-transform: capitalize;
-font-size: 24px;
+.div1 > h1,
+.div2 > h1,
+.div3 > h1,
+.div4 > h1 {
+  text-transform: capitalize;
+  font-size: 24px;
 }
 
-.div1 > p, .div2 > p, .div3 > p, .div4 > p{
+.div1 > p,
+.div2 > p,
+.div3 > p,
+.div4 > p {
   text-transform: capitalize;
   font-size: 13px;
 }
-.section5{
+.section5 {
   position: relative;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   margin-top: 50px;
 }
 
-.section5 > img{
+.section5 > img {
   width: 800px;
   padding: 30px;
   border-radius: 13px;
 }
-.box{
+.box {
   background-color: black;
   position: absolute;
   top: 35%;
@@ -418,13 +436,13 @@ font-size: 24px;
   gap: 20px;
 }
 
-.box > h1{
+.box > h1 {
   font-size: 24px;
   text-transform: capitalize;
   color: white;
 }
 
-.box > button{
+.box > button {
   width: 150px;
   height: 50px;
   border-radius: 15px;
@@ -437,22 +455,22 @@ font-size: 24px;
   transition: all ease 0.3s;
 }
 
-.box > button:hover{
-  outline:2px solid white
+.box > button:hover {
+  outline: 2px solid white;
 }
 
-.section6 > h1{
+.section6 > h1 {
   font-size: 24px;
-    text-align: start;
-    padding-left: 30px;
-    margin: 20px 0;
-    text-transform: capitalize;
+  text-align: start;
+  padding-left: 30px;
+  margin: 20px 0;
+  text-transform: capitalize;
 }
-.section6 > hr{
+.section6 > hr {
   width: 94%;
   margin: auto;
 }
-.s6Products{
+.s6Products {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -462,23 +480,23 @@ font-size: 24px;
   list-style: none;
 }
 
-.s6Products>li{
+.s6Products > li {
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: 10px;
   cursor: pointer;
   position: relative;
 }
-.s6Products>li:hover h1{
+.s6Products > li:hover h1 {
   text-decoration: underline;
 }
 
-.s6Products>li>div{
+.s6Products > li > div {
   background-image: url("https://keeppricing.com/cdn/shop/files/WhatsAppImage2022-12-13at12.30.57AM_a100ca18-cf79-47b6-b3b8-aeb0b17ec5bb.webp?v=1708262412&width=750");
   background-position: center;
   background-repeat: no-repeat;
@@ -489,37 +507,37 @@ font-size: 24px;
   border-radius: 10px 10px 0 0;
   transition: 0.3s;
 }
-.s6Products>li:hover div{
+.s6Products > li:hover div {
   background-image: url("https://keeppricing.com/cdn/shop/files/cllcosvn7c6gg9idc170_d6afc5f4-7c21-4eb4-b822-703e03f9a4b8.jpg?v=1709231930&width=750");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.s6Products>li > h1{
+.s6Products > li > h1 {
   font-size: 24px;
   text-transform: capitalize;
   color: black;
   text-align: center;
 }
-.s6Products>li > s{
+.s6Products > li > s {
   font-size: 14px;
-  color: rgb(38, 36, 36); 
+  color: rgb(38, 36, 36);
   cursor: auto;
 }
-.s6Products>li > p{
+.s6Products > li > p {
   font-size: 20px;
   color: black;
   text-transform: capitalize;
   margin-bottom: 30px;
   cursor: auto;
 }
-.s6Products>li> span{
+.s6Products > li > span {
   position: absolute;
   top: 20px;
   right: 20px;
   width: 50px;
   height: 20px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   font-size: 10px;
   border-radius: 10px;
   color: black;
@@ -527,20 +545,86 @@ font-size: 24px;
   align-items: center;
   justify-content: center;
 }
+
+.section7 {
+  min-height: 400px;
+}
+
+.section7 > form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section7 > form > label {
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 30px 0;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.section7 > form > input {
+  width: 300px;
+  padding: 15px 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 100px;
+}
+
+.section7 > form > input::placeholder {
+  transition: 0.3s;
+}
+
+.section7 > form > input:focus::placeholder {
+  transform: translateY(-15px);
+  font-size: 10px;
+}
+
+.section7 > form > input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.section7 > ul{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-left: 30px;
+  list-style: none;
+}
+
+.section7 > ul > a{
+  text-decoration: none;
+  color: gray;
+}
+
+.section7 > ul > a:hover li{
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 425px) and (min-width: 320px) {
-  .section4FlexCon{
+  .section4FlexCon {
     flex-direction: column;
     gap: 35px;
   }
-  .div1 > p, .div2 > p, .div3 > p, .div4 > p{
+  .div1 > p,
+  .div2 > p,
+  .div3 > p,
+  .div4 > p {
     text-align: center;
   }
-  .section5>img{
+  .section5 > img {
     width: 316px;
     padding: 30px;
     border-radius: 13px;
   }
-  .box{
+  .box {
     max-width: 155px;
     background-color: black;
     position: absolute;
@@ -555,13 +639,13 @@ font-size: 24px;
     gap: 20px;
     border-radius: 13px;
   }
-  .box>h1{
+  .box > h1 {
     font-size: 11px;
     text-transform: capitalize;
     color: white;
     text-align: center;
   }
-  .box > button{
+  .box > button {
     width: 89px;
     height: 18px;
     border-radius: 0;
@@ -574,14 +658,14 @@ font-size: 24px;
     transition: all ease 0.3s;
   }
 }
-@media only screen and (max-width: 768px) and (min-width: 425px){
-  .section5 > img{
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  .section5 > img {
     width: 450px;
   }
-  .box{
+  .box {
     padding: 40px;
   }
-  .box>h1{
+  .box > h1 {
     text-align: center;
   }
 }
@@ -623,17 +707,18 @@ font-size: 24px;
   .s1ImgCon {
     min-height: 370px;
   }
-  .cardContainer{ 
+  .cardContainer {
     padding: 30px 0px 30px 10px;
-  
   }
-  .section4FlexCon{
+  .section4FlexCon {
     flex-wrap: wrap;
   }
- 
+  .section7 > form > label{
+    font-size: 17px;
+  }
 }
-@media only screen and (max-width: 1024px) and (min-width: 768px){
-  .section4FlexCon{
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .section4FlexCon {
     flex-wrap: wrap;
     gap: 40px;
   }
